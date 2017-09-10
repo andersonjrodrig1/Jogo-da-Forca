@@ -1,0 +1,68 @@
+﻿  Jogo da Forca.cpp
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(14): error C3861: 'iniciarJogo': identifier not found
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(34): error C3861: 'validaCategoria': identifier not found
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(37): error C3861: 'forca': identifier not found
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(40): error C3861: 'mensagemExcecao': identifier not found
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(32): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(47): warning C4996: 'strupr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strupr. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(589): note: see declaration of 'strupr'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(72): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(73): error C2446: '==': no conversion from 'int' to 'char []'
+  d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(73): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(85): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(91): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(94): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(111): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(114): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(117): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(120): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(160): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(163): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(166): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(169): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(172): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(302): error C2131: expression did not evaluate to a constant
+  d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(302): note: failure was caused by a read of a variable outside its lifetime
+  d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(302): note: see usage of 'tamBanco'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(305): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(330): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(335): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(340): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(355): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(359): error C2664: 'int validaLetraDigitada(char [],char [])': cannot convert argument 1 from 'char' to 'char []'
+  d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(359): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(372): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(383): warning C4018: '<': signed/unsigned mismatch
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(314): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(315): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(317): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(319): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(357): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(387): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo da forca.cpp(391): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
