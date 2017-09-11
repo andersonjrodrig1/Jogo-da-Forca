@@ -5,21 +5,25 @@
 
 using namespace std;
 
+const char *frutas[] = { "manga","banana","maca","melao","caqui","pera","melancia","abacaxi","limao" };
+const char *verduras[] = { "alface","cebola","jilo","beterraba","batata","quiabo","abobora","batata doce","milho" };
+const char *bebidas[] = { "agua","cafe","suco","guarana","cerveja","pinga" };
+const char *comidas[] = { "arroz","feijao","macarrao","frango","carne bovina","carne de porco" };
+
 Logica::Logica() { }
 
 Logica::~Logica() { }
 
-int Logica::validaLetraDigitada(char letra[], char letrasDigitadas[]) {
-	int i;
-	for (i = 0; i < strlen(letrasDigitadas); i++) {
+bool Logica::validaLetraDigitada(char letra, char *letrasDigitadas) {
+	for (int i = 0; i < strlen(letrasDigitadas); i++) {
 		if (letra == letrasDigitadas[i])
-			return 1;
+			return true;
 	}
 
-	return 0;
+	return false;
 }
 
-char Logica::*consultaBanco(int indice, int cdCategoria) {
+char *Logica::consultaBanco(int indice, int cdCategoria) {
 	char palavra[15];
 
 	switch (cdCategoria) {
@@ -45,7 +49,7 @@ char Logica::*consultaBanco(int indice, int cdCategoria) {
 	return palavra;
 }
 
-char Logica::*buscarDicaPalavra(int cdCategoria) {
+char *Logica::buscarDicaPalavra(int cdCategoria) {
 	char retorno[20];
 
 	switch (cdCategoria) {
@@ -95,7 +99,7 @@ int Logica::validaCategoria(char *op) {
 	return cdCategoria;
 }
 
-char Logica::*buscarCategoria(int cdCategoria) {
+char *Logica::buscarCategoria(int cdCategoria) {
 	char nmCategoria[20];
 	switch (cdCategoria) {
 	case 1:

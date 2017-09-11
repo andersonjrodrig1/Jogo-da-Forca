@@ -9,6 +9,13 @@ Montagem::Montagem() { }
 
 Montagem::~Montagem() { }
 
+void Montagem::mostraForca(char palavraSorte[], char dica[], char nmCategoria[], int chances) {
+	cout << "\t\t************* JOGO DA FORCA **************";
+	cout << "\n\nDICA: " << strupr(dica) << " LETRAS " << strlen(palavraSorte);
+	cout << "\n\nCHANCES: " << chances;
+	cout << "\n\nPALAVRA: ";
+}
+
 void Montagem::montaForca(int erro) {
 	switch (erro) {
 	case 0:

@@ -143,6 +143,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo da Forca.cpp" />
+    <ClCompile Include="Jogo.cpp" />
+    <ClCompile Include="Logica.cpp" />
+    <ClCompile Include="Mensagem.cpp" />
+    <ClCompile Include="Montagem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Jogo.h" />
+    <ClInclude Include="Logica.h" />
+    <ClInclude Include="Mensagem.h" />
+    <ClInclude Include="Montagem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
