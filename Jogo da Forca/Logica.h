@@ -1,14 +1,15 @@
 #pragma once
+
 class Logica
 {
 	public:
 		Logica();
 		virtual ~Logica();
-		bool validaLetraDigitada(char letra, char letrasDigitadas[]);
-		char *consultaBanco(int indice, int cdCategoria);
-		char *buscarDicaPalavra(int cdCategoria);
+		bool validaLetraDigitada(char letra, std::string letrasDigitadas);
+		std::string consultaBanco(int indice, int cdCategoria);
+		std::string buscarDicaPalavra(int cdCategoria);
 		int validaCategoria(char *op);
-		char *buscarCategoria(int cdCategoria);
+		std::string buscarCategoria(int cdCategoria);
 		int buscarTamanhoBanco(int cdCategoria);
 };
 

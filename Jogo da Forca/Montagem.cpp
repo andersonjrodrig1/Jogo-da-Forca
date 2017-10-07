@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 #include "Montagem.h"
 
 using namespace std;
@@ -9,9 +10,9 @@ Montagem::Montagem() { }
 
 Montagem::~Montagem() { }
 
-void Montagem::mostraForca(char palavraSorte[], char dica[], char nmCategoria[], int chances) {
+void Montagem::mostraForca(string palavraSorte, string dica, string nmCategoria, int chances) {
 	cout << "\t\t************* JOGO DA FORCA **************";
-	cout << "\n\nDICA: " << strupr(dica) << " LETRAS " << strlen(palavraSorte);
+	cout << "\n\nDICA: " << dica << " " << palavraSorte.length() << " letras.";
 	cout << "\n\nCHANCES: " << chances;
 	cout << "\n\nPALAVRA: ";
 }

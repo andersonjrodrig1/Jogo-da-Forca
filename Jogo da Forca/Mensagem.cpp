@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 #include "Mensagem.h"
 
 using namespace std;
@@ -9,7 +10,7 @@ Mensagem::Mensagem() { }
 
 Mensagem::~Mensagem() { }
 
-void Mensagem::mensagemUsuario(char *mensagem, char palavraSorte[]) {
+void Mensagem::mensagemUsuario(string mensagem, string palavraSorte) {
 	cout << "\t\t\tBEM VINDO AO JOGO DA FORCA";
 	cout << "\n\n\n" << mensagem << "\n\n";
 	cout << "Palavra Sorteada: " << palavraSorte;
@@ -29,7 +30,7 @@ void Mensagem::mensagemUsuarioOpcao() {
 	cout << "\n\nEscolha uma opcao: ";
 }
 
-void Mensagem::mensagemExcecao(char *mensagem) {
+void Mensagem::mensagemExcecao(string mensagem) {
 	system("cls");
 	cout << "\t\t***** Bem vindo ao Jogo da Forca *****\n";
 	cout << "\n\n" << mensagem << "\n\n";

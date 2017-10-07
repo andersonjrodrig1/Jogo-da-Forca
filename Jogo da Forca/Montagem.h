@@ -1,10 +1,11 @@
 #pragma once
+
 class Montagem
 {
 	public:
 		Montagem();
 		virtual ~Montagem();
-		void mostraForca(char palavraSorte[], char dica[], char nmCategoria[], int chances);
+		void mostraForca(std::string palavraSorte, std::string dica, std::string nmCategoria, int chances);
 		void montaForca(int erro);
 };
 

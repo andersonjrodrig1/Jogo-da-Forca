@@ -1,21 +1,22 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 #include "Logica.h"
 
 using namespace std;
 
-const char *frutas[] = { "manga","banana","maca","melao","caqui","pera","melancia","abacaxi","limao" };
-const char *verduras[] = { "alface","cebola","jilo","beterraba","batata","quiabo","abobora","batata doce","milho" };
-const char *bebidas[] = { "agua","cafe","suco","guarana","cerveja","pinga" };
-const char *comidas[] = { "arroz","feijao","macarrao","frango","carne bovina","carne de porco" };
+const string frutas[] = { "manga","banana","maca","melao","caqui","pera","melancia","abacaxi","limao" };
+const string verduras[] = { "alface","cebola","jilo","beterraba","batata","quiabo","abobora","batata doce","milho" };
+const string bebidas[] = { "agua","cafe","suco","guarana","cerveja","pinga" };
+const string comidas[] = { "arroz","feijao","macarrao","frango","carne bovina","carne de porco" };
 
 Logica::Logica() { }
 
 Logica::~Logica() { }
 
-bool Logica::validaLetraDigitada(char letra, char *letrasDigitadas) {
-	for (int i = 0; i < strlen(letrasDigitadas); i++) {
+bool Logica::validaLetraDigitada(char letra, string letrasDigitadas) {
+	for (int i = 0; i < letrasDigitadas.length(); i++) {
 		if (letra == letrasDigitadas[i])
 			return true;
 	}
@@ -23,21 +24,21 @@ bool Logica::validaLetraDigitada(char letra, char *letrasDigitadas) {
 	return false;
 }
 
-char *Logica::consultaBanco(int indice, int cdCategoria) {
-	char palavra[15];
+string Logica::consultaBanco(int indice, int cdCategoria) {
+	string palavra;
 
 	switch (cdCategoria) {
 	case 1:
-		strcpy(palavra, frutas[indice]);
+		palavra = frutas[indice];
 		break;
 	case 2:
-		strcpy(palavra, verduras[indice]);
+		palavra = verduras[indice];
 		break;
 	case 3:
-		strcpy(palavra, bebidas[indice]);
+		palavra = bebidas[indice];
 		break;
 	case 4:
-		strcpy(palavra, comidas[indice]);
+		palavra = comidas[indice];
 		break;
 	default:
 		system("cls");
@@ -49,21 +50,21 @@ char *Logica::consultaBanco(int indice, int cdCategoria) {
 	return palavra;
 }
 
-char *Logica::buscarDicaPalavra(int cdCategoria) {
-	char retorno[20];
+string Logica::buscarDicaPalavra(int cdCategoria) {
+	string retorno;
 
 	switch (cdCategoria) {
 	case 1:
-		strcpy(retorno, "E uma fruta com");
+		retorno = "E uma fruta com";
 		break;
 	case 2:
-		strcpy(retorno, "E uma verdura com");
+		retorno = "E uma verdura com";
 		break;
 	case 3:
-		strcpy(retorno, "E uma bebida com");
+		retorno =  "E uma bebida com";
 		break;
 	case 4:
-		strcpy(retorno, "E uma comida com");
+		retorno =  "E uma comida com";
 		break;
 	default:
 		system("cls");
@@ -99,23 +100,23 @@ int Logica::validaCategoria(char *op) {
 	return cdCategoria;
 }
 
-char *Logica::buscarCategoria(int cdCategoria) {
-	char nmCategoria[20];
+string Logica::buscarCategoria(int cdCategoria) {
+	string nmCategoria;
 	switch (cdCategoria) {
 	case 1:
-		strcpy(nmCategoria, "Frutas");
+		nmCategoria ="Frutas";
 		break;
 	case 2:
-		strcpy(nmCategoria, "Verduras");
+		nmCategoria = "Verduras";
 		break;
 	case 3:
-		strcpy(nmCategoria, "Bebidas");
+		nmCategoria = "Bebidas";
 		break;
 	case 4:
-		strcpy(nmCategoria, "Comidas");
+		nmCategoria = "Comidas";
 		break;
 	default:
-		strcpy(nmCategoria, "");
+		nmCategoria = "";
 		break;
 	}
 
@@ -126,16 +127,16 @@ int Logica::buscarTamanhoBanco(int cdCategoria) {
 	int tamBanco = 0;
 	switch (cdCategoria) {
 	case 1:
-		tamBanco = sizeof(frutas) / sizeof(int);
+		tamBanco = sizeof(frutas) / sizeof(string);
 		break;
 	case 2:
-		tamBanco = sizeof(verduras) / sizeof(int);
+		tamBanco = sizeof(verduras) / sizeof(string);
 		break;
 	case 3:
-		tamBanco = sizeof(bebidas) / sizeof(int);
+		tamBanco = sizeof(bebidas) / sizeof(string);
 		break;
 	case 4:
-		tamBanco = sizeof(comidas) / sizeof(int);
+		tamBanco = sizeof(comidas) / sizeof(string);
 		break;
 	default:
 		tamBanco = 0;
