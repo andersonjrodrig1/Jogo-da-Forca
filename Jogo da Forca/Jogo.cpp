@@ -76,12 +76,12 @@ void Jogo::forca(int cdCategoria) {
 			} else {
 				for (int i = 0; i < palavraSorte.length(); i++) {
 					if (letra == palavraSorte[i])
-						reservaLetras[i] = letra;
+						reservaLetras += letra;
 				}
 
 				for (int i = 0; i < palavraSorte.length(); i++) {
-					if (reservaLetras[i] == palavraSorte[i])
-						printf("%c ", reservaLetras[i]);
+					if (logica.validaLetraDigitada(palavraSorte[i], reservaLetras))
+						printf("%c ", palavraSorte[i]);
 					else
 						printf("%s ", "_");
 				}
@@ -103,7 +103,7 @@ void Jogo::forca(int cdCategoria) {
 					mensagem.mensagemExcecao("Letra ja foi digitada!");
 					continue;
 				} else {
-					letrasDigitadas[contD] = letra;
+					letrasDigitadas += letra;
 					digitou++;
 					contD++;
 				}
