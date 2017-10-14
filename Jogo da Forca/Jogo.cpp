@@ -18,11 +18,10 @@ Jogo::~Jogo() { }
 void Jogo::iniciarJogo() {
 	Logica logica;
 	Mensagem mensagem;
-	char op[1];
+	char op;
 
 	mensagem.mensagemUsuarioOpcao();
-
-	scanf("%c", &op);
+	cin >> op;
 
 	int cdCategoria = logica.validaCategoria(op);
 
@@ -41,7 +40,7 @@ void Jogo::forca(int cdCategoria) {
 
 	string nmCategoria, palavraSorte, letrasDigitadas, reservaLetras, dica;
 	char jogar, letra;
-	int indice, pos, chances, erro, contD, acertou, digitou, controle, tamBanco;
+	int indice, pos, chances, erro, contD, acertou, digitou, controle, tamBanco, contEspaco;
 
 	do {
 		tamBanco = logica.buscarTamanhoBanco(cdCategoria);
@@ -55,6 +54,7 @@ void Jogo::forca(int cdCategoria) {
 		contD = 0;
 		digitou = 0;
 		acertou = 0;
+		contEspaco = 0;
 
 		letrasDigitadas = "";
 		reservaLetras = "";
@@ -71,7 +71,11 @@ void Jogo::forca(int cdCategoria) {
 
 			if (digitou == 0) {
 				for (int i = 0; i < palavraSorte.length(); i++) {
-					printf("%s ", "_");
+					if (palavraSorte[i] == 32) { //32 representa espaço na tabela ASCC
+						cout << "  ";
+						contEspaco++;
+					} else
+						cout << "_ ";
 				}
 			} else {
 				for (int i = 0; i < palavraSorte.length(); i++) {
@@ -81,9 +85,11 @@ void Jogo::forca(int cdCategoria) {
 
 				for (int i = 0; i < palavraSorte.length(); i++) {
 					if (logica.validaLetraDigitada(palavraSorte[i], reservaLetras))
-						printf("%c ", palavraSorte[i]);
+						cout << palavraSorte[i] << " ";
+					else if (palavraSorte[i] == 32) //32 representa espaço na tabela ASCC
+						cout << "  ";
 					else
-						printf("%s ", "_");
+						cout << "_ ";
 				}
 			}
 
@@ -91,12 +97,12 @@ void Jogo::forca(int cdCategoria) {
 
 			if (digitou > 0) {
 				for (int i = 0; i < digitou; i++) {
-					printf("%c ", letrasDigitadas[i]);
+					cout << letrasDigitadas[i] << " ";
 				}
 			}
 
 			if (erro < 6 && acertou < palavraSorte.length()) {
-				printf("\n\nDigite uma letra: ");
+				cout << "\n\nDigite uma letra: ";
 				letra = getche();
 
 				if (logica.validaLetraDigitada(letra, letrasDigitadas)) {
@@ -122,9 +128,9 @@ void Jogo::forca(int cdCategoria) {
 				erro++;
 				chances--;
 			}
-		} while (erro <= 6 && acertou < palavraSorte.length());
+		} while (erro <= 6 && acertou < (palavraSorte.length()) - contEspaco);
 
-		if (acertou == palavraSorte.length()) {
+		if (acertou == (palavraSorte.length() - contEspaco)) {
 			mensagem.mensagemUsuario("PARABENS, VOCE GANHOU!!!", palavraSorte);
 			jogar = getche();
 		} else {

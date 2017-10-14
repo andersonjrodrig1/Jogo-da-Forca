@@ -76,10 +76,10 @@ string Logica::buscarDicaPalavra(int cdCategoria) {
 	return retorno;
 }
 
-int Logica::validaCategoria(char *op) {
+int Logica::validaCategoria(char op) {
 	int cdCategoria;
 
-	switch (op[0]) {
+	switch (op) {
 	case '1':
 		cdCategoria = 1;
 		break;

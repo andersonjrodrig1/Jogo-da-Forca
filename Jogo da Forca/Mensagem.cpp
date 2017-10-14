@@ -11,6 +11,7 @@ Mensagem::Mensagem() { }
 Mensagem::~Mensagem() { }
 
 void Mensagem::mensagemUsuario(string mensagem, string palavraSorte) {
+	system("cls");
 	cout << "\t\t\tBEM VINDO AO JOGO DA FORCA";
 	cout << "\n\n\n" << mensagem << "\n\n";
 	cout << "Palavra Sorteada: " << palavraSorte;
@@ -21,6 +22,7 @@ void Mensagem::mensagemUsuario(string mensagem, string palavraSorte) {
 }
 
 void Mensagem::mensagemUsuarioOpcao() {
+	system("cls");
 	cout << "\t\t***** Bem vindo ao Jogo da Forca *****\n";
 	cout << "\nEscolha uma categoria para iniciar o Jogo:\n";
 	cout << "\n1- Frutas";
