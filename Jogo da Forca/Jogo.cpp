@@ -128,7 +128,7 @@ void Jogo::forca(int cdCategoria) {
 				erro++;
 				chances--;
 			}
-		} while (erro <= 6 && acertou < (palavraSorte.length()) - contEspaco);
+		} while (erro <= 6 && acertou < (palavraSorte.length() - contEspaco));
 
 		if (acertou == (palavraSorte.length() - contEspaco)) {
 			mensagem.mensagemUsuario("PARABENS, VOCE GANHOU!!!", palavraSorte);

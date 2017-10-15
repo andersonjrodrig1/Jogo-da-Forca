@@ -1,0 +1,10 @@
+﻿  Jogo.cpp
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo.cpp(49): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo.cpp(106): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo.cpp(135): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
+d:\desenvolvimento\visual studio\jogo da forca\jogo da forca\jogo.cpp(138): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(455): note: see declaration of 'getche'
+  Jogo da Forca.vcxproj -> D:\Desenvolvimento\Visual Studio\Jogo da Forca\x64\Debug\Jogo da Forca.exe
+  Jogo da Forca.vcxproj -> D:\Desenvolvimento\Visual Studio\Jogo da Forca\x64\Debug\Jogo da Forca.pdb (Partial PDB)
