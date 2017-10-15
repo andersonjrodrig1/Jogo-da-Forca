@@ -1,2 +1,6 @@
 *.opendb
 *.dll
+*.pdb
+*.ilk
+*.exe
+*.obj
